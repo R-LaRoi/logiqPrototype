@@ -45,6 +45,7 @@ export default function Contact() {
       });
       return response;
     },
+
     onSuccess: () => {
       toast({
         title: "Message sent!",
