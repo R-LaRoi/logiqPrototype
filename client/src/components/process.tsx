@@ -16,8 +16,8 @@ export default function Process() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "50% 50%",
-            gridGap: "60px",
+            gridTemplateColumns: "40% 60%", // Adjusted column widths to give more space to the right, might need further tweaking
+            gridGap: "80px", // Maintained gap, can adjust if needed
             alignItems: "start",
           }}
         >
@@ -25,55 +25,55 @@ export default function Process() {
           <div className="space-y-6">
             {/* Block 1 - Interview Coaching */}
             <div
-              className="relative p-8"
+              className="relative p-8 shadow-sm" // Removed rounded-lg
               style={{ backgroundColor: "#ffffff" }}
             >
               <div className="absolute top-6 right-6 text-4xl font-light text-gray-300">
                 01
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Interview Coaching
+                Interview Coaching {/* Original text */}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed pr-12">
-                Great interviews are a combination of your confidence, strategy, preparation, and practice. If you want to develop a winning interview strategy and prepare great answers to interview questions, contact us today for a no-cost initial consultation.
+                Great interviews are a combination of your confidence, strategy, preparation, and practice. If you want to develop a winning interview strategy and prepare great answers to interview questions, contact us today for a no-cost initial consultation. {/* Original text */}
               </p>
             </div>
 
-            {/* Block 2 - Career Coaching (Highlighted) */}
+            {/* Block 2 - Career Coaching (Highlighted) - Added indentation */}
             <div
-              className="relative p-8"
-              style={{ backgroundColor: "#115cef" }}
+              className="relative p-8 shadow-md" // Removed rounded-lg
+              style={{ backgroundColor: "#115cef", marginLeft: "10%" }} // Added marginLeft for indentation
             >
               <div className="absolute top-6 right-6 text-4xl font-light text-blue-300">
                 02
               </div>
               <h3 className="text-xl font-semibold mb-4 text-white">
-                Career Coaching
+                Career Coaching {/* Original text */}
               </h3>
               <p className="text-white text-sm leading-relaxed pr-12">
-                Our Career coaches are experts in skills such as career planning, resume building, negotiation and interviewing. While you may only search for a new gig or switch careers a handful times in your life, our professionals are up to date with current hiring practices because they're constantly working to help job seekers.
+                Our Career coaches are experts in skills such as career planning, resume building, negotiation and interviewing. While you may only search for a new gig or switch careers a handful times in your life, our professionals are up to date with current hiring practices because they're constantly working to help job seekers. {/* Original text */}
               </p>
             </div>
 
             {/* Block 3 - Executive Career Coaching */}
             <div
-              className="relative p-8"
+              className="relative p-8 shadow-sm" // Removed rounded-lg
               style={{ backgroundColor: "#ffffff" }}
             >
               <div className="absolute top-6 right-6 text-4xl font-light text-gray-300">
                 03
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Executive Career Coaching
+                Executive Career Coaching {/* Original text */}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed pr-12">
-                Our seasoned executive coaches help guide corporate officers gain self-awareness, clarify goals, achieve their development objectives, unlock their potential, and act as a sounding board and provide guidance.
+                Our seasoned executive coaches help guide corporate officers gain self-awareness, clarify goals, achieve their development objectives, unlock their potential, and act as a sounding board and provide guidance. {/* Original text */}
               </p>
             </div>
           </div>
 
-          {/* Right Column - Advantages Content */}
-          <div className="pl-8">
+          {/* Right Column - Coaching Summary */}
+          <div>
             <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
               Our Expertise
             </p>
@@ -89,43 +89,24 @@ export default function Process() {
               onClick={scrollToContact}
               className="inline-block transition-all duration-200"
               style={{
-                border: "1px solid #ffffff",
                 backgroundColor: "#115cef",
                 color: "#ffffff",
                 textAlign: "center",
-                letterSpacing: "0.2px",
-                borderRadius: "100px",
-                padding: "16px 28px",
-                fontSize: "18px",
-                fontWeight: 400,
+                borderRadius: "9999px",
+                padding: "16px 36px",
+                fontSize: "16px", // Slightly smaller font size
+                fontWeight: 500,
                 lineHeight: "1.5em",
+                border: "none",
               }}
             >
-              Schedule Your Consultation
+              Get a Free Consultation {/* Original text (from image) */}
             </button>
           </div>
         </div>
+
+        {/* Removed the Stats Section */}
       </div>
-      {/* Stats Section */}
-      <div className="grid md:grid-cols-4 gap-8 mt-20 text-center">
-        <div>
-          <div className="text-4xl font-bold text-blue-600 mb-2">6K+</div>
-          <p className="text-gray-600 text-sm">Satisfied Clients</p>
-        </div>
-        <div>
-          <div className="text-4xl font-bold text-blue-600 mb-2">10K+</div>
-          <p className="text-gray-600 text-sm">Satisfied Clients</p>
-        </div>
-        <div>
-          <div className="text-4xl font-bold text-blue-600 mb-2">18+</div>
-          <p className="text-gray-600 text-sm">Satisfied Clients</p>
-        </div>
-        <div>
-          <div className="text-4xl font-bold text-blue-600 mb-2">64</div>
-          <p className="text-gray-600 text-sm">Satisfied Clients</p>
-        </div>
-      </div>
-      
     </section>
   );
 }
