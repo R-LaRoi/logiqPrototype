@@ -242,20 +242,31 @@ export default function Contact() {
             </div>
 
             {/* Free Resume Review CTA */}
-            <div className="bg-gradient-to-br from-accent to-green-600 shadow-lg p-8 text-white">
-              <h3 className="text-2xl font-heading font-semibold mb-4">
-                Start with a Free Resume Review
-              </h3>
-              <p className="mb-6 opacity-90">
-                Get professional feedback on your resume with no obligation. Our experts
-                will analyze your current resume and provide actionable recommendations.
-              </p>
-              <button
-                onClick={scrollToContact}
-                className="bg-white text-accent px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
-              >
-                Get Your Free Review
-              </button>
+            <div 
+              className="relative shadow-lg p-8 text-white bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url('/attached_assets/Untitled design (6).png')`
+              }}
+            >
+              {/* Dark overlay for text contrast */}
+              <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+              
+              {/* Content */}
+              <div className="relative z-10">
+                <h3 className="text-2xl font-heading font-semibold mb-4">
+                  Start with a Free Resume Review
+                </h3>
+                <p className="mb-6 opacity-90">
+                  Get professional feedback on your resume with no obligation. Our experts
+                  will analyze your current resume and provide actionable recommendations.
+                </p>
+                <button
+                  onClick={scrollToContact}
+                  className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+                >
+                  Get Your Free Review
+                </button>
+              </div>
             </div>
           </div>
         </div>
