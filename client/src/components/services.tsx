@@ -14,10 +14,25 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex justify-center gap-4">
           {/* Service 1 */}
-          <div className="text-center relative">
-            <div className="bg-white rounded p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
+          <div className="relative" style={{ width: '31%' }}>
+            <div 
+              className="relative flex flex-col"
+              style={{
+                backgroundColor: '#ffffff',
+                textAlign: 'center',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                paddingBottom: '30px',
+                paddingLeft: '20px',
+                paddingRight: '20px',
+                paddingTop: '60px',
+                display: 'flex',
+                boxShadow: '0 5px 12px #10182826'
+              }}
+            >
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <FileText className="w-8 h-8 text-white" />
               </div>
@@ -48,8 +63,23 @@ export default function Services() {
           </div>
 
           {/* Service 2 */}
-          <div className="text-center relative">
-            <div className="bg-white rounded p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
+          <div className="relative" style={{ width: '31%' }}>
+            <div 
+              className="relative flex flex-col"
+              style={{
+                backgroundColor: '#ffffff',
+                textAlign: 'center',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                paddingBottom: '30px',
+                paddingLeft: '20px',
+                paddingRight: '20px',
+                paddingTop: '60px',
+                display: 'flex',
+                boxShadow: '0 5px 12px #10182826'
+              }}
+            >
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <Users className="w-8 h-8 text-white" />
               </div>
@@ -80,8 +110,23 @@ export default function Services() {
           </div>
 
           {/* Service 3 */}
-          <div className="text-center relative">
-            <div className="bg-white rounded p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
+          <div className="relative" style={{ width: '31%' }}>
+            <div 
+              className="relative flex flex-col"
+              style={{
+                backgroundColor: '#ffffff',
+                textAlign: 'center',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                paddingBottom: '30px',
+                paddingLeft: '20px',
+                paddingRight: '20px',
+                paddingTop: '60px',
+                display: 'flex',
+                boxShadow: '0 5px 12px #10182826'
+              }}
+            >
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
