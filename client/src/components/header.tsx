@@ -29,14 +29,14 @@ export default function Header() {
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-200 ${
-        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-white shadow-sm"
+        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 items-center h-16">
           {/* Left - Logo */}
           <div className="flex items-center">
-            <span className="text-xl font-heading font-bold text-gray-900">
+            <span className={`text-xl font-heading font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
               Logiq Careers
             </span>
           </div>
@@ -47,25 +47,25 @@ export default function Header() {
             <div className="hidden md:flex items-center space-x-6">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-gray-700 hover:text-blue-600 text-sm font-medium transition-colors duration-200"
+                className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/90 hover:text-white'}`}
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-gray-700 hover:text-blue-600 text-sm font-medium transition-colors duration-200"
+                className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/90 hover:text-white'}`}
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-gray-700 hover:text-blue-600 text-sm font-medium transition-colors duration-200"
+                className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/90 hover:text-white'}`}
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-700 hover:text-blue-600 text-sm font-medium transition-colors duration-200"
+                className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/90 hover:text-white'}`}
               >
                 Contact
               </button>
@@ -75,7 +75,7 @@ export default function Header() {
             <div className="hidden md:block">
               <button
                 onClick={() => scrollToSection("contact")}
-                className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
+                className="bg-white text-blue-600 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
               >
                 Get Started
               </button>
