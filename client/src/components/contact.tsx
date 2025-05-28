@@ -84,7 +84,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-muted rounded-xl shadow-lg p-8">
+          <div className="bg-muted shadow-lg p-8">
             <h3 className="text-2xl font-heading font-semibold mb-6 text-foreground">
               Send Us a Message
             </h3>
@@ -205,7 +205,7 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             {/* Quick Questions */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white shadow-lg p-8">
               <h3 className="text-2xl font-heading font-semibold mb-6 text-foreground">
                 Have a Quick Question?
               </h3>
@@ -250,7 +250,7 @@ export default function Contact() {
             </div>
 
             {/* Free Resume Review CTA */}
-            <div className="bg-gradient-to-br from-accent to-green-600 rounded-xl shadow-lg p-8 text-white">
+            <div className="bg-gradient-to-br from-accent to-green-600 shadow-lg p-8 text-white">
               <h3 className="text-2xl font-heading font-semibold mb-4">
                 Start with a Free Resume Review
               </h3>
