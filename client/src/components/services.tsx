@@ -37,7 +37,7 @@ export default function Services() {
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Resume Development & Enhancement
+                Resume Development
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 From creation to strategic updating, our resume services help you summarize your qualifications, skills, and achievements effectively. We ensure your resume clearly details your experience, education, and key accomplishments, making a strong impression on prospective employers.
@@ -84,7 +84,7 @@ export default function Services() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Strategic Career Coaching & Guidance
+                Strategic Career Coaching
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 Our 60-90 minute Career Coaching Sessions provide a comprehensive framework for career discovery. We help you identify your interests, talents, and desires, then integrate your past education and experiences with relevant career options to build a clear and actionable career plan.
@@ -131,7 +131,7 @@ export default function Services() {
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Executive Navigator Program: 90-Day Executive Placement Accelerator
+                Executive Navigator Program
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 Fast-track your executive job search with our 90-day Executive Navigator Program. This highly personalized service offers twice-weekly 1-on-1 coaching, comprehensive leadership and branding development, critical industry insights, and strategic networking. We provide exclusive access to executive job openings, customized resumes, mock interview preparation, and actively market you to target companies, ensuring a guided and efficient path to your ideal executive role.
