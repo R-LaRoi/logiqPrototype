@@ -1,3 +1,5 @@
+import ohlogiqVideo from "@assets/ohlogiq.mp4";
+
 export default function About() {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
@@ -78,8 +80,9 @@ export default function About() {
               muted
               loop
               playsInline
+              controls
             >
-              <source src="/attached_assets/ohlogiq.mp4" type="video/mp4" />
+              <source src={ohlogiqVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             
