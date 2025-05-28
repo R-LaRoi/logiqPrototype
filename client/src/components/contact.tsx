@@ -19,8 +19,7 @@ import type { InsertContactSubmission } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { Mail, Phone, Clock } from "lucide-react";
 import { z } from "zod";
-import cityBgImage from "@assets/Untitled design (6).png";
-
+import cityBgImage from "@assets/city-skyline.png";
 type ContactFormData = z.infer<typeof insertContactSubmissionSchema>;
 
 export default function Contact() {
