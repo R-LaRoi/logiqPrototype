@@ -1,4 +1,4 @@
-import heroVideo from "@assets/360logiq.mp4";
+import heroVideo from "@assets/ohlogiq.mp4";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {

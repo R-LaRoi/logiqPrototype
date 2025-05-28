@@ -1,4 +1,4 @@
-import ohlogiqVideo from "@assets/ohlogiq.mp4";
+import aboutVideo from "@assets/360logiq.mp4";
 
 export default function About() {
   const scrollToContact = () => {
@@ -82,7 +82,7 @@ export default function About() {
               playsInline
               controls
             >
-              <source src={ohlogiqVideo} type="video/mp4" />
+              <source src={aboutVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             
