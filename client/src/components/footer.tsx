@@ -40,7 +40,7 @@ export default function Footer() {
               Customized Career Services targeted toward those seeking more. Professional
               career coaching, resume writing, and interview preparation for success.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-8">
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -53,6 +53,28 @@ export default function Footer() {
               >
                 <Linkedin className="w-6 h-6" />
               </a>
+            </div>
+            
+            {/* Newsletter Subscription */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Stay Updated with Logiq Careers</h4>
+              <form onSubmit={handleSubscribe} className="flex gap-2">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="enter email"
+                  className="flex-1 px-4 py-2 bg-white text-gray-900 placeholder-gray-500 focus:outline-none"
+                  required
+                />
+                <button
+                  type="submit"
+                  disabled={isSubscribing}
+                  className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 font-semibold transition-colors duration-200 disabled:opacity-50"
+                >
+                  {isSubscribing ? "..." : "Connect"}
+                </button>
+              </form>
             </div>
           </div>
 
@@ -135,27 +157,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Right Side - Newsletter Subscription */}
-          <div className="lg:max-w-sm">
-            <h4 className="text-lg font-semibold mb-4">Stay Updated with Logiq Careers</h4>
-            <form onSubmit={handleSubscribe} className="flex gap-2">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="enter email"
-                className="flex-1 px-4 py-2 bg-white text-gray-900 placeholder-gray-500 focus:outline-none"
-                required
-              />
-              <button
-                type="submit"
-                disabled={isSubscribing}
-                className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 font-semibold transition-colors duration-200 disabled:opacity-50"
-              >
-                {isSubscribing ? "..." : "Connect"}
-              </button>
-            </form>
-          </div>
+
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center">
