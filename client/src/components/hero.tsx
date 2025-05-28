@@ -1,3 +1,5 @@
+import heroVideo from "@assets/360logiq.mp4";
+
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -48,14 +50,19 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Image - Full Height */}
+          {/* Right Video - Full Height */}
           <div className="relative h-full flex items-end">
-            <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800"
-              alt="Professional woman working at desk"
+            <video
               className="w-full h-full object-cover object-center"
               style={{ height: "100vh" }}
-            />
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={heroVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
