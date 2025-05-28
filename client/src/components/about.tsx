@@ -68,20 +68,19 @@ export default function About() {
           </div>
 
           {/* Right Content - Image with Blue Overlay Box */}
-          <div className="relative">
+          <div className="relative" style={{ height: '400px' }}>
             <img
               src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
               alt="Professional business meeting"
-              className="w-full object-cover"
+              className="w-full h-full object-cover"
               style={{ 
-                objectFit: 'cover',
-                height: '300px'
+                objectFit: 'cover'
               }}
             />
             
             {/* Blue Overlay Box */}
             <div 
-              className="text-white p-6 rounded-lg"
+              className="text-white p-6"
               style={{
                 backgroundColor: '#115cef',
                 marginTop: '-60px',
