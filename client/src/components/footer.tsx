@@ -32,9 +32,9 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="md:col-span-2">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+          {/* Left Side - Company Info */}
+          <div className="flex-1">
             <h3 className="text-2xl font-heading font-bold mb-4">Logiq Careers</h3>
             <p className="text-gray-300 mb-4 max-w-md">
               Customized Career Services targeted toward those seeking more. Professional
@@ -56,112 +56,103 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Home
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Services
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  About
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Contact
-                </button>
-              </li>
-            </ul>
+          {/* Center - Navigation Links */}
+          <div className="flex gap-12">
+            <div>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <button
+                    onClick={() => scrollToSection("home")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("about")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    About
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("contact")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">Services</h4>
+              <ul className="space-y-2">
+                <li>
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Free Resume Review
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Career Coaching
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Resume Writing
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Interview Coaching
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Free Resume Review
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Career Coaching
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Resume Writing
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Interview Coaching
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Newsletter Subscription */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="max-w-md mx-auto text-center mb-8">
-            <h4 className="text-xl font-semibold mb-4 flex items-center justify-center">
-              <Mail className="w-5 h-5 mr-2" />
-              Subscribe to Our Newsletter
-            </h4>
-            <p className="text-gray-300 mb-6">
-              Get career tips, industry insights, and job search strategies delivered to your inbox.
-            </p>
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
-              <div className="flex-1">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email"
-                  className="w-full px-4 py-3 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
-                  required
-                />
-              </div>
+          {/* Right Side - Newsletter Subscription */}
+          <div className="lg:max-w-sm">
+            <h4 className="text-lg font-semibold mb-4">Stay Updated with Logiq Careers</h4>
+            <form onSubmit={handleSubscribe} className="flex gap-2">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="enter email"
+                className="flex-1 px-4 py-2 bg-white text-gray-900 placeholder-gray-500 focus:outline-none"
+                required
+              />
               <button
                 type="submit"
                 disabled={isSubscribing}
-                className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 font-semibold transition-colors duration-200 rounded-full disabled:opacity-50"
+                className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 font-semibold transition-colors duration-200 disabled:opacity-50"
               >
-                {isSubscribing ? "Subscribing..." : "SUBSCRIBE"}
+                {isSubscribing ? "..." : "Connect"}
               </button>
             </form>
           </div>
