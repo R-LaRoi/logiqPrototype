@@ -37,10 +37,10 @@ export default function Services() {
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Free Resume Review
+                Resume Development & Enhancement
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
-                These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
+                From creation to strategic updating, our resume services help you summarize your qualifications, skills, and achievements effectively. We ensure your resume clearly details your experience, education, and key accomplishments, making a strong impression on prospective employers.
               </p>
               <button 
                 className="inline-block transition-all duration-200 mt-4"
@@ -84,10 +84,10 @@ export default function Services() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Career Coaching
+                Strategic Career Coaching & Guidance
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
-                These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
+                Our 60-90 minute Career Coaching Sessions provide a comprehensive framework for career discovery. We help you identify your interests, talents, and desires, then integrate your past education and experiences with relevant career options to build a clear and actionable career plan.
               </p>
               <button 
                 className="inline-block transition-all duration-200 mt-4"
@@ -131,10 +131,10 @@ export default function Services() {
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Interview Coaching
+                Executive Navigator Program: 90-Day Executive Placement Accelerator
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
-                These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
+                Fast-track your executive job search with our 90-day Executive Navigator Program. This highly personalized service offers twice-weekly 1-on-1 coaching, comprehensive leadership and branding development, critical industry insights, and strategic networking. We provide exclusive access to executive job openings, customized resumes, mock interview preparation, and actively market you to target companies, ensuring a guided and efficient path to your ideal executive role.
               </p>
               <button 
                 className="inline-block transition-all duration-200 mt-4"
