@@ -16,7 +16,7 @@ export default function About() {
         <div style={{ display: 'grid', gridTemplateColumns: '45% 55%', gridGap: '60px', alignItems: 'start' }}>
           {/* Left Content */}
           <div>
-            <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
+            <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               About Us
             </p>
             <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
@@ -31,18 +31,18 @@ export default function About() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '20px' }} className="mb-8">
               <div>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Cover Letters
+                  <span className="font-bold" style={{ color: "#050c35" }}>&gt;&gt;</span> Cover Letters
                 </p>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> ATS Resume
+                  <span className="font-bold" style={{ color: "#050c35" }}>&gt;&gt;</span> ATS Resume
                 </p>
               </div>
               <div>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Career Coaching
+                  <span className="font-bold" style={{ color: "#050c35" }}>&gt;&gt;</span> Career Coaching
                 </p>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> LinkedIn Optimization
+                  <span className="font-bold" style={{ color: "#050c35" }}>&gt;&gt;</span> LinkedIn Optimization
                 </p>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function About() {
               className="inline-block transition-all duration-200"
               style={{
                 border: '1px solid #ffffff',
-                backgroundColor: '#115cef',
+                backgroundColor: '#050c35',
                 color: '#ffffff',
                 textAlign: 'center',
                 letterSpacing: '0.2px',
@@ -82,7 +82,7 @@ export default function About() {
             <div 
               className="text-white p-6"
               style={{
-                backgroundColor: '#115cef',
+                backgroundColor: '#050c35',
                 marginTop: '-60px',
                 position: 'relative',
                 zIndex: 10

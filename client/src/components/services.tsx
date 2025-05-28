@@ -5,7 +5,7 @@ export default function Services() {
     <section id="services" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
+          <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
             Our Services
           </p>
           <h2 className="text-4xl lg:text-5xl font-serif text-gray-800 leading-tight">
