@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
             
             {/* Newsletter Subscription */}
-            <div>
+            <div className="max-w-sm">
               <h4 className="text-lg font-semibold mb-4">Stay Updated with Logiq Careers</h4>
               <form onSubmit={handleSubscribe} className="flex gap-2">
                 <input
@@ -64,7 +64,7 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="enter email"
-                  className="flex-1 px-4 py-2 bg-white text-gray-900 placeholder-gray-500 focus:outline-none"
+                  className="w-48 px-4 py-2 bg-white text-gray-900 placeholder-gray-500 focus:outline-none"
                   required
                 />
                 <button
