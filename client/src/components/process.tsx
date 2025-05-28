@@ -13,16 +13,43 @@ export default function Process() {
   return (
     <section className="py-20" style={{ backgroundColor: "#f8fafc" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "40% 60%", // Adjusted column widths to give more space to the right, might need further tweaking
-            gridGap: "80px", // Maintained gap, can adjust if needed
-            alignItems: "start",
-          }}
-        >
-          {/* Left Column - Content Blocks */}
-          <div className="space-y-6">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16">
+          
+          {/* Right Column - Coaching Summary (appears first on mobile) */}
+          <div className="order-1 lg:order-2">
+            <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
+              Our Expertise
+            </p>
+            <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
+              Comprehensive Career <br />
+              Coaching Solutions
+            </h2>
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              From interview preparation and career planning to executive coaching, our experienced professionals provide personalized guidance to help you achieve your career goals. Whether you're seeking a new position, changing careers, or advancing to executive leadership, we offer the expertise and support you need to succeed.
+            </p>
+            
+            <button
+              onClick={scrollToContact}
+              className="inline-block transition-all duration-200"
+              style={{
+                border: "1px solid #ffffff",
+                backgroundColor: "#115cef",
+                color: "#ffffff",
+                textAlign: 'center',
+                letterSpacing: "0.2px",
+                borderRadius: "100px",
+                padding: "16px 28px",
+                fontSize: "18px",
+                fontWeight: 400,
+                lineHeight: "1.5em",
+              }}
+            >
+              Schedule Your Consultation
+            </button>
+          </div>
+
+          {/* Left Column - Content Blocks (appears second on mobile) */}
+          <div className="space-y-6 order-2 lg:order-1">
             {/* Block 1 - Interview Coaching */}
             <div
               className="relative p-8 shadow-sm" // Removed rounded-lg
@@ -70,38 +97,6 @@ export default function Process() {
                 Our seasoned executive coaches help guide corporate officers gain self-awareness, clarify goals, achieve their development objectives, unlock their potential, and act as a sounding board and provide guidance. {/* Original text */}
               </p>
             </div>
-          </div>
-
-          {/* Right Column - Coaching Summary */}
-          <div>
-            <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
-              Our Expertise
-            </p>
-            <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
-              Comprehensive Career <br />
-              Coaching Solutions
-            </h2>
-            <p className="text-gray-600 mb-8 leading-relaxed">
-              From interview preparation and career planning to executive coaching, our experienced professionals provide personalized guidance to help you achieve your career goals. Whether you're seeking a new position, changing careers, or advancing to executive leadership, we offer the expertise and support you need to succeed.
-            </p>
-
-            <button
-              onClick={scrollToContact}
-              className="inline-block transition-all duration-200"
-              style={{
-                backgroundColor: "#115cef",
-                color: "#ffffff",
-                textAlign: "center",
-                borderRadius: "9999px",
-                padding: "16px 36px",
-                fontSize: "16px", // Slightly smaller font size
-                fontWeight: 500,
-                lineHeight: "1.5em",
-                border: "none",
-              }}
-            >
-              Get a Free Consultation {/* Original text (from image) */}
-            </button>
           </div>
         </div>
 
