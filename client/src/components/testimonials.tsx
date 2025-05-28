@@ -9,9 +9,21 @@ export default function Testimonials() {
       rating: 5
     },
     {
-      name: "Professional Client", 
-      role: "Career Transition",
-      testimonial: "Logiqcareers coached me during several professional transitions. Their guidance was invaluable in helping me navigate career changes and find the right opportunities that aligned with my goals.",
+      name: "M. Colquitt",
+      role: "IT Director",
+      testimonial: "Logiqcareers coached me during several professional transitions. Without a doubt David's coaching and guidance helped elevate me to a much deeper understanding and appreciation of my skills, experiences and visions. The overall insights and guidance given, was well worth the investment. If needed I would definitely use their services again, and refer others.",
+      rating: 5
+    },
+    {
+      name: "A. Reddy",
+      role: "Healthcare Director",
+      testimonial: "Recently I was at a major crossroads in my career, so I engaged an executive coach who was absolutely outstanding. David's ability to help me focus and get me through these major milestones was extremely valuable to my growth.",
+      rating: 5
+    },
+    {
+      name: "P. Nell",
+      role: "Pharmaceutical Executive",
+      testimonial: "Logiqcareers provided a variety of insights that greatly helped me during my interview process. I definitely will use them again, and recommend them to anyone seeking career advancement.",
       rating: 5
     }
   ];
