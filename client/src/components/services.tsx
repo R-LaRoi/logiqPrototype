@@ -17,7 +17,7 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Service 1 */}
           <div className="text-center relative">
-            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
+            <div className="bg-white rounded p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <FileText className="w-8 h-8 text-white" />
               </div>
@@ -48,7 +48,7 @@ export default function Services() {
 
           {/* Service 2 */}
           <div className="text-center relative">
-            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
+            <div className="bg-white rounded p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <Users className="w-8 h-8 text-white" />
               </div>
@@ -79,7 +79,7 @@ export default function Services() {
 
           {/* Service 3 */}
           <div className="text-center relative">
-            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
+            <div className="bg-white rounded p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
