@@ -95,25 +95,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid md:grid-cols-4 gap-8 mt-20 text-center">
-          <div>
-            <div className="text-4xl font-bold text-blue-600 mb-2">6K+</div>
-            <p className="text-gray-600 text-sm">Satisfied Clients</p>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-blue-600 mb-2">10K+</div>
-            <p className="text-gray-600 text-sm">Satisfied Clients</p>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-blue-600 mb-2">18+</div>
-            <p className="text-gray-600 text-sm">Satisfied Clients</p>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-blue-600 mb-2">64</div>
-            <p className="text-gray-600 text-sm">Satisfied Clients</p>
-          </div>
-        </div>
+
       </div>
     </section>
   );
