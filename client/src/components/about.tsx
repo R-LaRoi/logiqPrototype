@@ -67,16 +67,21 @@ export default function About() {
             </button>
           </div>
 
-          {/* Right Content - Image with Blue Overlay Box */}
+          {/* Right Content - Video with Blue Overlay Box */}
           <div className="relative" style={{ height: '400px' }}>
-            <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-              alt="Professional business meeting"
+            <video
               className="w-full h-full object-cover"
               style={{ 
                 objectFit: 'cover'
               }}
-            />
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/attached_assets/ohlogiq.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             
             {/* Blue Overlay Box */}
             <div 
