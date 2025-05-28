@@ -1,6 +1,10 @@
-import { Twitter, Linkedin } from "lucide-react";
+import { Twitter, Linkedin, Mail } from "lucide-react";
+import { useState } from "react";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [isSubscribing, setIsSubscribing] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -10,6 +14,19 @@ export default function Footer() {
         behavior: "smooth",
       });
     }
+  };
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    
+    setIsSubscribing(true);
+    // Newsletter subscription logic would go here
+    setTimeout(() => {
+      setIsSubscribing(false);
+      setEmail("");
+      alert("Thank you for subscribing to our newsletter!");
+    }, 1000);
   };
 
   return (
@@ -118,7 +135,39 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+        {/* Newsletter Subscription */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="max-w-md mx-auto text-center mb-8">
+            <h4 className="text-xl font-semibold mb-4 flex items-center justify-center">
+              <Mail className="w-5 h-5 mr-2" />
+              Subscribe to Our Newsletter
+            </h4>
+            <p className="text-gray-300 mb-6">
+              Get career tips, industry insights, and job search strategies delivered to your inbox.
+            </p>
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
+              <div className="flex-1">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email"
+                  className="w-full px-4 py-3 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={isSubscribing}
+                className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 font-semibold transition-colors duration-200 rounded-full disabled:opacity-50"
+              >
+                {isSubscribing ? "Subscribing..." : "SUBSCRIBE"}
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400">
             &copy; 2024 Logiq Careers. All rights reserved. | Privacy Policy | Terms of
             Service
