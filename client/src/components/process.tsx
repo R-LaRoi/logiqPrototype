@@ -17,7 +17,7 @@ export default function Process() {
           
           {/* Right Column - Coaching Summary (appears first on mobile) */}
           <div className="order-1 lg:order-2">
-            <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
+            <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               Our Expertise
             </p>
             <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
@@ -30,10 +30,10 @@ export default function Process() {
             
             <button
               onClick={scrollToContact}
-              className="inline-block transition-all duration-200"
+              className="inline-block transition-all duration-200 hover:opacity-90"
               style={{
-                border: "1px solid #ffffff",
-                backgroundColor: "#115cef",
+                border: "1px solid #050c35",
+                backgroundColor: "#050c35",
                 color: "#ffffff",
                 textAlign: 'center',
                 letterSpacing: "0.2px",
@@ -69,9 +69,9 @@ export default function Process() {
             {/* Block 2 - Career Coaching (Highlighted) - Added indentation */}
             <div
               className="relative p-8 shadow-md" // Removed rounded-lg
-              style={{ backgroundColor: "#115cef", marginLeft: "10%" }} // Added marginLeft for indentation
+              style={{ backgroundColor: "#050c35", marginLeft: "10%" }} // Added marginLeft for indentation
             >
-              <div className="absolute top-6 right-6 text-4xl font-light text-blue-300">
+              <div className="absolute top-6 right-6 text-4xl font-light" style={{ color: "rgba(255, 255, 255, 0.3)" }}>
                 02
               </div>
               <h3 className="text-xl font-semibold mb-4 text-white">
