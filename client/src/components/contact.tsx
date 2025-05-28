@@ -262,7 +262,7 @@ export default function Contact() {
                 </p>
                 <button
                   onClick={scrollToContact}
-                  className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+                  className="bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200"
                 >
                   Get Your Free Review
                 </button>
