@@ -56,7 +56,16 @@ export default function Testimonials() {
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               Testimonials
             </p>
-            <h2 className="text-5xl font-serif font-bold text-gray-800 mb-8 leading-tight">
+            <h2 
+              className="font-normal mb-6 leading-none text-gray-800"
+              style={{
+                marginTop: "10px",
+                marginBottom: "10px",
+                fontSize: "68px",
+                fontWeight: 400,
+                lineHeight: "1em",
+              }}
+            >
               What Our Satisfied <br />
               Clients Say
             </h2>
