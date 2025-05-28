@@ -19,6 +19,7 @@ import type { InsertContactSubmission } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { Mail, Phone, Clock } from "lucide-react";
 import { z } from "zod";
+import cityBgImage from "@assets/Untitled design (6).png";
 
 type ContactFormData = z.infer<typeof insertContactSubmissionSchema>;
 
@@ -245,7 +246,7 @@ export default function Contact() {
             <div 
               className="relative shadow-lg p-8 text-white bg-cover bg-center bg-no-repeat"
               style={{
-                backgroundImage: `url('/attached_assets/Untitled design (6).png')`
+                backgroundImage: `url(${cityBgImage})`
               }}
             >
               {/* Dark overlay for text contrast */}
