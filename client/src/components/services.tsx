@@ -14,23 +14,24 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="flex justify-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
           {/* Service 1 */}
-          <div className="relative" style={{ width: '31%' }}>
+          <div className="relative">
             <div 
-              className="relative flex flex-col"
+              className="relative flex flex-col h-full"
               style={{
                 backgroundColor: '#ffffff',
                 textAlign: 'center',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'flex-start',
                 alignItems: 'center',
                 paddingBottom: '30px',
                 paddingLeft: '20px',
                 paddingRight: '20px',
                 paddingTop: '60px',
                 display: 'flex',
-                boxShadow: '0 5px 12px #10182826'
+                boxShadow: '0 5px 12px #10182826',
+                minHeight: '400px'
               }}
             >
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
@@ -63,21 +64,22 @@ export default function Services() {
           </div>
 
           {/* Service 2 */}
-          <div className="relative" style={{ width: '31%' }}>
+          <div className="relative">
             <div 
-              className="relative flex flex-col"
+              className="relative flex flex-col h-full"
               style={{
                 backgroundColor: '#ffffff',
                 textAlign: 'center',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'flex-start',
                 alignItems: 'center',
                 paddingBottom: '30px',
                 paddingLeft: '20px',
                 paddingRight: '20px',
                 paddingTop: '60px',
                 display: 'flex',
-                boxShadow: '0 5px 12px #10182826'
+                boxShadow: '0 5px 12px #10182826',
+                minHeight: '400px'
               }}
             >
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
@@ -110,21 +112,22 @@ export default function Services() {
           </div>
 
           {/* Service 3 */}
-          <div className="relative" style={{ width: '31%' }}>
+          <div className="relative">
             <div 
-              className="relative flex flex-col"
+              className="relative flex flex-col h-full"
               style={{
                 backgroundColor: '#ffffff',
                 textAlign: 'center',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'flex-start',
                 alignItems: 'center',
                 paddingBottom: '30px',
                 paddingLeft: '20px',
                 paddingRight: '20px',
                 paddingTop: '60px',
                 display: 'flex',
-                boxShadow: '0 5px 12px #10182826'
+                boxShadow: '0 5px 12px #10182826',
+                minHeight: '400px'
               }}
             >
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
