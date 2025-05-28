@@ -68,7 +68,7 @@ export default function Services() {
             <div 
               className="relative flex flex-col h-full"
               style={{
-                backgroundColor: '#050c35',
+                backgroundColor: '#ffffff',
                 textAlign: 'center',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
@@ -82,21 +82,21 @@ export default function Services() {
                 minHeight: '400px'
               }}
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2" style={{ backgroundColor: "#ffffff" }}>
-                <Users className="w-8 h-8" style={{ color: "#050c35" }} />
+              <div className="w-16 h-16 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2" style={{ backgroundColor: "#050c35" }}>
+                <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Strategic Career Coaching
               </h3>
-              <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-grow">
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 Our 60-90 minute Career Coaching Sessions provide a comprehensive framework for career discovery. We help you identify your interests, talents, and desires, then integrate your past education and experiences with relevant career options to build a clear and actionable career plan.
               </p>
               <button 
-                className="inline-block transition-all duration-200 mt-4 hover:opacity-90"
+                className="inline-block transition-all duration-200 mt-4"
                 style={{
                   border: '1px solid #ffffff',
-                  backgroundColor: '#ffffff',
-                  color: '#050c35',
+                  backgroundColor: '#f0f5ff',
+                  color: '#1e344b',
                   textAlign: 'center',
                   letterSpacing: '0.2px',
                   borderRadius: '100px',
