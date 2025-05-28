@@ -110,7 +110,7 @@ export default function Pricing() {
 
               <button
                 onClick={scrollToContact}
-                className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors duration-200 ${
+                className={`w-full py-3 px-6 rounded-full font-semibold transition-colors duration-200 ${
                   plan.popular
                     ? "bg-white text-primary hover:bg-gray-100"
                     : "bg-primary text-white hover:bg-primary/90"
