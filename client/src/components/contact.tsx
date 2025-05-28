@@ -184,7 +184,7 @@ export default function Contact() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-primary text-white hover:bg-primary/90"
+                  className="w-full bg-primary text-white hover:bg-primary/90 rounded-full"
                   size="lg"
                   disabled={isSubmitting}
                 >
