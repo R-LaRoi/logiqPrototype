@@ -96,7 +96,7 @@ export default function About() {
                 zIndex: 10
               }}
             >
-              <p className="text-white leading-relaxed">
+              <p className="text-white leading-relaxed italic" style={{ fontSize: "0.85em" }}>
                 More than just a document, your resume is a powerful summary of your professional journey. It highlights your qualifications, skills, and key accomplishments, providing future employers with a clear picture of your value and what you can achieve.
               </p>
             </div>
