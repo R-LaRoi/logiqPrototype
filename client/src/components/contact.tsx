@@ -249,7 +249,7 @@ export default function Contact() {
               }}
             >
               {/* Dark overlay for text contrast */}
-              <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
               
               {/* Content */}
               <div className="relative z-10">
