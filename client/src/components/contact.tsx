@@ -1,23 +1,30 @@
 import { useState } from "react";
-import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactSubmissionSchema } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
-import { useToast } from "@/hooks/use-toast";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { useToast } from "@/hooks/use-toast";
+import { insertContactSubmissionSchema } from "@shared/schema";
+import type { InsertContactSubmission } from "@shared/schema";
+import { apiRequest } from "@/lib/queryClient";
 import { Mail, Phone, Clock } from "lucide-react";
-import type { z } from "zod";
+import { z } from "zod";
 
 type ContactFormData = z.infer<typeof insertContactSubmissionSchema>;
 
 export default function Contact() {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const queryClient = useQueryClient();
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(insertContactSubmissionSchema),
@@ -26,37 +33,37 @@ export default function Contact() {
       lastName: "",
       email: "",
       phone: "",
-      service: "",
       message: "",
     },
   });
 
-  const contactMutation = useMutation({
+  const { mutate: submitContact, isPending: isSubmitting } = useMutation({
     mutationFn: async (data: ContactFormData) => {
-      const response = await apiRequest("POST", "/api/contact", data);
-      return response.json();
+      const response = await apiRequest("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+      return response;
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast({
-        title: "Message Sent Successfully!",
-        description: data.message || "We'll get back to you within 24 hours.",
+        title: "Message sent!",
+        description: "We'll get back to you within 24 hours.",
       });
       form.reset();
-      setIsSubmitting(false);
+      queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
     },
-    onError: (error) => {
+    onError: () => {
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
-      setIsSubmitting(false);
     },
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true);
-    contactMutation.mutate(data);
+    submitContact(data);
   };
 
   const scrollToContact = () => {
@@ -124,9 +131,13 @@ export default function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email Address *</FormLabel>
+                      <FormLabel>Email *</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="john.doe@email.com" {...field} />
+                        <Input
+                          type="email"
+                          placeholder="john@example.com"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -138,35 +149,15 @@ export default function Contact() {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Phone Number</FormLabel>
+                      <FormLabel>Phone</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="(555) 123-4567" {...field} />
+                        <Input
+                          type="tel"
+                          placeholder="(555) 123-4567"
+                          {...field}
+                          value={field.value || ""}
+                        />
                       </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="service"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Service Interest *</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select a service" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="free-resume-review">Free Resume Review</SelectItem>
-                          <SelectItem value="career-coaching">Career Coaching Sessions</SelectItem>
-                          <SelectItem value="resume-writing">Resume Writing</SelectItem>
-                          <SelectItem value="interview-coaching">Interview Coaching</SelectItem>
-                          <SelectItem value="multiple">Multiple Services</SelectItem>
-                        </SelectContent>
-                      </Select>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -183,6 +174,7 @@ export default function Contact() {
                           placeholder="Tell us about your career goals and how we can help..."
                           rows={4}
                           {...field}
+                          value={field.value || ""}
                         />
                       </FormControl>
                       <FormMessage />
@@ -266,7 +258,6 @@ export default function Contact() {
               </button>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
