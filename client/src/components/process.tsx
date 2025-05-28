@@ -20,11 +20,11 @@ export default function Process() {
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               Our Expertise
             </p>
-            <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
               Comprehensive Career <br />
               Coaching Solutions
             </h2>
-            <p className="text-gray-600 mb-8 leading-relaxed">
+            <p className="text-gray-600 mb-8 leading-relaxed text-sm md:text-base">
               From interview preparation and career planning to executive coaching, our experienced professionals provide personalized guidance to help you achieve your career goals. Whether you're seeking a new position, changing careers, or advancing to executive leadership, we offer the expertise and support you need to succeed.
             </p>
             

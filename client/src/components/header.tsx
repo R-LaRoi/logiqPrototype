@@ -33,7 +33,7 @@ export default function Header() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 items-center h-16">
+        <div className="flex items-center justify-between h-16">
           {/* Left - Logo */}
           <div className="flex items-center">
             <span className={`text-xl font-heading font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
@@ -42,7 +42,7 @@ export default function Header() {
           </div>
 
           {/* Right - Navigation & CTA */}
-          <div className="flex items-center justify-end space-x-8">
+          <div className="flex items-center space-x-4 lg:space-x-8">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
               <button
@@ -85,7 +85,7 @@ export default function Header() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-blue-600 p-2"
+                className={`p-2 ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-gray-200'}`}
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
