@@ -28,17 +28,17 @@ export default function Services() {
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
               <button 
-                className="text-center text-sm font-normal leading-6 transition-all duration-200 mt-4 inline-block"
+                className="text-xs font-normal transition-all duration-200 mt-4 inline-block hover:opacity-80"
                 style={{
-                  border: '1px solid #ffffff',
+                  border: '1px solid #e5e7eb',
                   backgroundColor: '#f0f5ff',
                   color: '#1e344b',
-                  letterSpacing: '0.2px',
-                  borderRadius: '100px',
-                  padding: '8px 16px',
-                  fontSize: '14px',
+                  letterSpacing: '0.1px',
+                  borderRadius: '16px',
+                  padding: '4px 10px',
+                  fontSize: '11px',
                   fontWeight: 400,
-                  lineHeight: '1.5em'
+                  lineHeight: '1.2'
                 }}
               >
                 Learn More
@@ -59,17 +59,17 @@ export default function Services() {
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
               <button 
-                className="text-center text-sm font-normal leading-6 transition-all duration-200 mt-4 inline-block"
+                className="text-xs font-normal transition-all duration-200 mt-4 inline-block hover:opacity-80"
                 style={{
-                  border: '1px solid #ffffff',
+                  border: '1px solid #e5e7eb',
                   backgroundColor: '#f0f5ff',
                   color: '#1e344b',
-                  letterSpacing: '0.2px',
-                  borderRadius: '100px',
-                  padding: '8px 16px',
-                  fontSize: '14px',
+                  letterSpacing: '0.1px',
+                  borderRadius: '16px',
+                  padding: '4px 10px',
+                  fontSize: '11px',
                   fontWeight: 400,
-                  lineHeight: '1.5em'
+                  lineHeight: '1.2'
                 }}
               >
                 Learn More
@@ -90,17 +90,17 @@ export default function Services() {
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
               <button 
-                className="text-center text-sm font-normal leading-6 transition-all duration-200 mt-4 inline-block"
+                className="text-xs font-normal transition-all duration-200 mt-4 inline-block hover:opacity-80"
                 style={{
-                  border: '1px solid #ffffff',
+                  border: '1px solid #e5e7eb',
                   backgroundColor: '#f0f5ff',
                   color: '#1e344b',
-                  letterSpacing: '0.2px',
-                  borderRadius: '100px',
-                  padding: '8px 16px',
-                  fontSize: '14px',
+                  letterSpacing: '0.1px',
+                  borderRadius: '16px',
+                  padding: '4px 10px',
+                  fontSize: '11px',
                   fontWeight: 400,
-                  lineHeight: '1.5em'
+                  lineHeight: '1.2'
                 }}
               >
                 Learn More
