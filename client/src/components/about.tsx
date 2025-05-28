@@ -21,7 +21,16 @@ export default function About() {
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               About Us
             </p>
-            <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6" style={{ lineHeight: "1.044" }}>
+            <h2 
+              className="font-normal mb-6 leading-none text-gray-800"
+              style={{
+                marginTop: "10px",
+                marginBottom: "10px",
+                fontSize: "68px",
+                fontWeight: 400,
+                lineHeight: "1em",
+              }}
+            >
               Your Career. <br />
               Your Success Defined.
             </h2>
