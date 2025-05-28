@@ -34,6 +34,13 @@ A professional career services platform delivering AI-powered coaching solutions
 - **TSX** - TypeScript execution engine
 - **Drizzle ORM** - Type-safe database toolkit
 
+## Screenshots
+
+![App Screenshot](https://github.com/user-attachments/assets/3f7426aa-4144-4c8c-a28f-05bbcba28535)
+
+![App Screenshot](https://github.com/user-attachments/assets/1a68721e-3421-4bf7-9cf6-4220d7cb2187)
+
+![App Screenshot](https://github.com/user-attachments/assets/99448b07-67a7-4bdf-bfd3-512bf418782b)
 
 ## Installation
 
