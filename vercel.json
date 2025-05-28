@@ -1,0 +1,28 @@
+
+{
+  "version": 2,
+  "name": "logiq-careers", 
+  "buildCommand": "npm run build", 
+
+
+  "outputDirectory": "dist/public", 
+
+  "functions": {
+    "dist/index.js": { 
+      "runtime": "@vercel/node@2.x" 
+    }
+  },
+
+  "routes": [
+    {
+      
+      "src": "/api/(.*)", 
+      "dest": "/dist/index.js" 
+    },
+    {
+      
+      "src": "/(.*)", 
+      "dest": "/dist/public/$1" 
+    }
+  ]
+}
