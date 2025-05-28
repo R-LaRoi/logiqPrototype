@@ -23,7 +23,7 @@ export default function Process() {
         >
           {/* Left Column - Content Blocks */}
           <div className="space-y-6">
-            {/* Block 1 - Financial Clarity */}
+            {/* Block 1 - Interview Coaching */}
             <div
               className="relative p-8"
               style={{ backgroundColor: "#ffffff" }}
@@ -32,16 +32,14 @@ export default function Process() {
                 01
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Financial Clarity
+                Interview Coaching
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed pr-12">
-                Accounting provides a clear and organized record of financial
-                transactions, enabling individuals and businesses to understand
-                their financial position at any given time.
+                Great interviews are a combination of your confidence, strategy, preparation, and practice. If you want to develop a winning interview strategy and prepare great answers to interview questions, contact us today for a no-cost initial consultation.
               </p>
             </div>
 
-            {/* Block 2 - Decision Support (Highlighted) */}
+            {/* Block 2 - Career Coaching (Highlighted) */}
             <div
               className="relative p-8"
               style={{ backgroundColor: "#115cef" }}
@@ -50,16 +48,14 @@ export default function Process() {
                 02
               </div>
               <h3 className="text-xl font-semibold mb-4 text-white">
-                Decision Support
+                Career Coaching
               </h3>
               <p className="text-white text-sm leading-relaxed pr-12">
-                This information is crucial for making strategic decisions,
-                setting goals, and planning for the future. Financial statements
-                and reports generated through accounting help.
+                Our Career coaches are experts in skills such as career planning, resume building, negotiation and interviewing. While you may only search for a new gig or switch careers a handful times in your life, our professionals are up to date with current hiring practices because they're constantly working to help job seekers.
               </p>
             </div>
 
-            {/* Block 3 - Resource Allocation */}
+            {/* Block 3 - Executive Career Coaching */}
             <div
               className="relative p-8"
               style={{ backgroundColor: "#ffffff" }}
@@ -68,12 +64,10 @@ export default function Process() {
                 03
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Resource Allocation
+                Executive Career Coaching
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed pr-12">
-                Businesses use accounting information to allocate resources
-                efficiently. This includes determining the profitability of
-                products or services.
+                Our seasoned executive coaches help guide corporate officers gain self-awareness, clarify goals, achieve their development objectives, unlock their potential, and act as a sounding board and provide guidance.
               </p>
             </div>
           </div>
