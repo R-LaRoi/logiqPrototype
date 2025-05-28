@@ -34,7 +34,7 @@ export default function Services() {
                 minHeight: '400px'
               }}
             >
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2" style={{ backgroundColor: "#050c35" }}>
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
@@ -82,7 +82,7 @@ export default function Services() {
                 minHeight: '400px'
               }}
             >
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2" style={{ backgroundColor: "#050c35" }}>
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
@@ -130,7 +130,7 @@ export default function Services() {
                 minHeight: '400px'
               }}
             >
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2" style={{ backgroundColor: "#050c35" }}>
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
