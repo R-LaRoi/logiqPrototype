@@ -22,8 +22,9 @@ export default function About() {
               About Us
             </p>
             <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6" style={{ lineHeight: "1.044" }}>
-              Your Career. Your Success <br />
-              Defined. <br />
+              Your Career. <br />
+              Your Success <br />
+              Defined.
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Recognizing an unmet need in career services, Logiq Careers was established to deliver clearly structured, personalized support. Our comprehensive offerings are designed to help individuals and companies effectively navigate and succeed in an increasingly competitive economic landscape.
