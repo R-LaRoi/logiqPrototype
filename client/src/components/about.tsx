@@ -15,7 +15,7 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div style={{ display: 'grid', gridTemplateColumns: '45% 55%', gridGap: '60px', alignItems: 'start' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left Content */}
           <div>
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
@@ -30,7 +30,7 @@ export default function About() {
             </p>
             
             {/* Bullet Points in Two Columns */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '20px' }} className="mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5 mb-8">
               <div>
                 <p className="text-gray-800 mb-3">
                   <span className="font-bold" style={{ color: "#050c35" }}>&gt;&gt;</span> Cover Letters
@@ -70,7 +70,7 @@ export default function About() {
           </div>
 
           {/* Right Content - Video with Blue Overlay Box */}
-          <div className="relative" style={{ height: '400px' }}>
+          <div className="relative h-80 lg:h-96">
             <video
               className="w-full h-full object-cover"
               style={{ 
