@@ -27,12 +27,23 @@ export default function Services() {
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <a 
-                href="#" 
-                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 mt-4 inline-block text-sm font-normal"
+              <button 
+                className="inline-block transition-all duration-200 mt-4"
+                style={{
+                  border: '1px solid #ffffff',
+                  backgroundColor: '#f0f5ff',
+                  color: '#1e344b',
+                  textAlign: 'center',
+                  letterSpacing: '0.2px',
+                  borderRadius: '100px',
+                  padding: '16px 28px',
+                  fontSize: '18px',
+                  fontWeight: 400,
+                  lineHeight: '1.5em'
+                }}
               >
                 Learn More
-              </a>
+              </button>
             </div>
           </div>
 
@@ -48,12 +59,23 @@ export default function Services() {
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <a 
-                href="#" 
-                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 mt-4 inline-block text-sm font-normal"
+              <button 
+                className="inline-block transition-all duration-200 mt-4"
+                style={{
+                  border: '1px solid #ffffff',
+                  backgroundColor: '#f0f5ff',
+                  color: '#1e344b',
+                  textAlign: 'center',
+                  letterSpacing: '0.2px',
+                  borderRadius: '100px',
+                  padding: '16px 28px',
+                  fontSize: '18px',
+                  fontWeight: 400,
+                  lineHeight: '1.5em'
+                }}
               >
                 Learn More
-              </a>
+              </button>
             </div>
           </div>
 
@@ -69,12 +91,23 @@ export default function Services() {
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <a 
-                href="#" 
-                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 mt-4 inline-block text-sm font-normal"
+              <button 
+                className="inline-block transition-all duration-200 mt-4"
+                style={{
+                  border: '1px solid #ffffff',
+                  backgroundColor: '#f0f5ff',
+                  color: '#1e344b',
+                  textAlign: 'center',
+                  letterSpacing: '0.2px',
+                  borderRadius: '100px',
+                  padding: '16px 28px',
+                  fontSize: '18px',
+                  fontWeight: 400,
+                  lineHeight: '1.5em'
+                }}
               >
                 Learn More
-              </a>
+              </button>
             </div>
           </div>
         </div>
