@@ -65,7 +65,7 @@ export default function Pricing() {
             Unlock Your Career's <br />Full Potential
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Choose from our professional service plans, expertly tailored to accelerate your unique growth path
+            Choose from our professional service plans, expertly tailored to accelerate your unique growth path.
           </p>
         </div>
 
