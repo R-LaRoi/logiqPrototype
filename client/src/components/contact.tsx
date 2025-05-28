@@ -216,9 +216,6 @@ export default function Contact() {
                 <p className="text-gray-700">
                   Ever have a Job Interview question that you wanted to ask but didn't know if it was appropriate?
                 </p>
-                <p className="font-semibold text-gray-800">
-                  GIVE US A CALL....678.929.7391 or Email us at ask@logiqcareers.com
-                </p>
               </div>
               
               <div className="space-y-4">
