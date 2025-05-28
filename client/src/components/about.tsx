@@ -20,29 +20,29 @@ export default function About() {
               About Us
             </p>
             <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
-              Mastering The Art And <br />
-              Science Of Accounting
+              Redefining Success: Personalized <br />
+              Career Empowerment
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              The profession also upholds ethical standards and often requires continuing education to stay abreast of changes in accounting principles, tax laws, and technology.
+              Recognizing an unmet need in career services, Logiq Careers was established to deliver clearly structured, personalized support. Our comprehensive offerings are designed to help individuals and companies effectively navigate and succeed in an increasingly competitive economic landscape.
             </p>
             
             {/* Bullet Points in Two Columns */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '20px' }} className="mb-8">
               <div>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Financial Analysis
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Cover Letters
                 </p>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Real Clients
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> ATS Resume
                 </p>
               </div>
               <div>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Safe & Secure
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Career Coaching
                 </p>
                 <p className="text-gray-800 mb-3">
-                  <span className="text-blue-600 font-bold">&gt;&gt;</span> 100% Guarantee
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> LinkedIn Optimization
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function About() {
               }}
             >
               <p className="text-white leading-relaxed">
-                By analyzing historical financial data and projecting future trends, businesses can create realistic budgets, set financial goals, and plan for future growth.
+                Mission: Recognizing an unmet need in career services, Logiq Careers was established to deliver clearly structured, personalized support. Our comprehensive offerings are designed to help individuals and companies effectively navigate and succeed in an increasingly competitive economic landscape.
               </p>
             </div>
           </div>
