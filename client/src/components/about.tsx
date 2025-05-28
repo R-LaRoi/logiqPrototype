@@ -13,67 +13,102 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div style={{ display: 'grid', gridTemplateColumns: '45% 55%', gridGap: '60px', alignItems: 'start' }}>
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl font-heading font-bold text-foreground mb-6">
+            <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
+              About Us
+            </p>
+            <h2 className="text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
               Mastering The Art And <br />
-              Science Of <span className="text-primary">Career</span>
+              Science Of Accounting
             </h2>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
-              At Logiq Careers, we address unmet needs in career services with comprehensive personalized career services for individuals and companies in an increasingly competitive economy.
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              The profession also upholds ethical standards and often requires continuing education to stay abreast of changes in accounting principles, tax laws, and technology.
             </p>
-            <p className="text-muted-foreground mb-8">
-              Our tagline says it all: "Customized Career Services targeted toward those seeking more." We understand that every professional's journey is unique, and we provide the personalized guidance and expertise needed to help you achieve your career goals.
-            </p>
+            
+            {/* Bullet Points in Two Columns */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '20px' }} className="mb-8">
+              <div>
+                <p className="text-gray-800 mb-3">
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Financial Analysis
+                </p>
+                <p className="text-gray-800 mb-3">
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Real Clients
+                </p>
+              </div>
+              <div>
+                <p className="text-gray-800 mb-3">
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> Safe & Secure
+                </p>
+                <p className="text-gray-800 mb-3">
+                  <span className="text-blue-600 font-bold">&gt;&gt;</span> 100% Guarantee
+                </p>
+              </div>
+            </div>
+
             <button
               onClick={scrollToContact}
-              className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors duration-200"
+              className="inline-block transition-all duration-200"
+              style={{
+                border: '1px solid #ffffff',
+                backgroundColor: '#115cef',
+                color: '#ffffff',
+                textAlign: 'center',
+                letterSpacing: '0.2px',
+                borderRadius: '100px',
+                padding: '16px 28px',
+                fontSize: '18px',
+                fontWeight: 400,
+                lineHeight: '1.5em'
+              }}
             >
-              Learn More
+              About Us
             </button>
           </div>
 
-          {/* Right Content - Blue Box */}
-          <div className="bg-primary text-white rounded-2xl p-8 relative">
+          {/* Right Content - Image with Blue Overlay Box */}
+          <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300"
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
               alt="Professional business meeting"
-              className="rounded-xl w-full h-48 object-cover mb-6"
+              className="w-full h-80 object-cover rounded-lg"
             />
-            <h3 className="text-2xl font-heading font-bold mb-4">
-              Empowering Decisions <br />
-              With Career Precision
-            </h3>
-            <p className="text-blue-100 mb-6">
-              Our expert team provides comprehensive career guidance tailored to your unique professional goals and aspirations.
-            </p>
-            <button
-              onClick={scrollToContact}
-              className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+            
+            {/* Blue Overlay Box */}
+            <div 
+              className="text-white p-6 rounded-lg"
+              style={{
+                backgroundColor: '#115cef',
+                marginTop: '-60px',
+                position: 'relative',
+                zIndex: 10
+              }}
             >
-              Get Started
-            </button>
+              <p className="text-white leading-relaxed">
+                By analyzing historical financial data and projecting future trends, businesses can create realistic budgets, set financial goals, and plan for future growth.
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Stats Section */}
         <div className="grid md:grid-cols-4 gap-8 mt-20 text-center">
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">95%</div>
-            <p className="text-muted-foreground text-sm">Client Success Rate</p>
+            <div className="text-4xl font-bold text-blue-600 mb-2">6K+</div>
+            <p className="text-gray-600 text-sm">Satisfied Clients</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">500+</div>
-            <p className="text-muted-foreground text-sm">Professionals Helped</p>
+            <div className="text-4xl font-bold text-blue-600 mb-2">10K+</div>
+            <p className="text-gray-600 text-sm">Satisfied Clients</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">10+</div>
-            <p className="text-muted-foreground text-sm">Years Experience</p>
+            <div className="text-4xl font-bold text-blue-600 mb-2">18+</div>
+            <p className="text-gray-600 text-sm">Satisfied Clients</p>
           </div>
           <div>
-            <div className="text-4xl font-bold text-primary mb-2">24h</div>
-            <p className="text-muted-foreground text-sm">Response Time</p>
+            <div className="text-4xl font-bold text-blue-600 mb-2">64</div>
+            <p className="text-gray-600 text-sm">Satisfied Clients</p>
           </div>
         </div>
       </div>
