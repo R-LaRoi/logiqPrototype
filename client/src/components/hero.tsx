@@ -13,8 +13,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-blue-600 text-white overflow-hidden"
-      style={{ height: "100vh" }}
+      className="relative text-white overflow-hidden"
+      style={{ backgroundColor: "#050c35", height: "100vh" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center h-full">
