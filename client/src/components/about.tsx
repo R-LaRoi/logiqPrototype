@@ -72,7 +72,7 @@ export default function About() {
             <img
               src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
               alt="Professional business meeting"
-              className="w-full object-cover rounded-lg"
+              className="w-full object-cover"
               style={{ 
                 objectFit: 'cover',
                 height: '300px'
