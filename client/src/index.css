@@ -1,28 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://cloud.typography.com/6135494/7605572/css/fonts.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: 0 0% 100%;
-  --foreground: 220 13% 18%; /* #1f2937 */
+  --foreground: 220 84% 11%; /* #050c35 */
   --muted: 210 20% 98%; /* #f8fafc */
   --muted-foreground: 215 20% 65%;
   --popover: 0 0% 100%;
-  --popover-foreground: 220 13% 18%;
+  --popover-foreground: 220 84% 11%;
   --card: 0 0% 100%;
-  --card-foreground: 220 13% 18%;
+  --card-foreground: 220 84% 11%;
   --border: 220 13% 91%;
   --input: 220 13% 91%;
-  --primary: 221 83% 53%; /* #2563eb - blue-600 */
-  --primary-foreground: 210 40% 98%;
+  --primary: 220 84% 11%; /* #050c35 */
+  --primary-foreground: 0 0% 100%;
   --primary-dark: #ffffff; /* White text for hero */
   --secondary: 210 20% 98%;
-  --secondary-foreground: 220 13% 18%;
-  --accent: 221 83% 53%; /* Same blue */
+  --secondary-foreground: 220 84% 11%;
+  --accent: 220 84% 11%; /* Same navy */
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
-  --ring: 221 83% 53%;
+  --ring: 220 84% 11%;
   --radius: 0.375rem;
 }
 
@@ -56,37 +59,37 @@
 
   body {
     @apply font-body antialiased bg-background text-foreground;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'nyt-cheltenham', Georgia, serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'nyt-cheltenham', Georgia, serif;
   }
 }
 
 @layer utilities {
   .font-heading {
-    font-family: 'Inter', sans-serif;
+    font-family: 'nyt-cheltenham', Georgia, serif;
   }
   
   .font-body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'nyt-cheltenham', Georgia, serif;
   }
   
   .text-primary-custom {
-    color: #2563eb;
+    color: #050c35;
   }
   
   .text-accent-custom {
-    color: #10b981;
+    color: #050c35;
   }
   
   .bg-primary-custom {
-    background-color: #2563eb;
+    background-color: #050c35;
   }
   
   .bg-accent-custom {
-    background-color: #10b981;
+    background-color: #050c35;
   }
   
   .bg-light-custom {
