@@ -71,15 +71,7 @@ export default function Header() {
               </button>
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden md:block">
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="bg-white text-blue-600 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
-              >
-                Get Started
-              </button>
-            </div>
+
 
             {/* Mobile menu button */}
             <div className="md:hidden">
@@ -121,12 +113,7 @@ export default function Header() {
               >
                 Contact
               </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="block mx-3 mt-4 bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium text-center w-auto"
-              >
-                Get Started
-              </button>
+
             </div>
           </div>
         )}
