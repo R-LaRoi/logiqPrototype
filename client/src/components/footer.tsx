@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
             
             {/* Newsletter Subscription */}
-            <div className="max-w-sm">
+            <div className="max-w-sm pb-4">
               <h4 className="text-lg font-semibold mb-4">Stay Updated with Logiq Careers</h4>
               <form onSubmit={handleSubscribe} className="flex gap-2">
                 <input
