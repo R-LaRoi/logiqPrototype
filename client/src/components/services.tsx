@@ -2,7 +2,7 @@ import { FileText, Users, MessageSquare } from "lucide-react";
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
