@@ -10,7 +10,7 @@ export default function Services() {
           </p>
           <h2 className="text-4xl lg:text-5xl font-serif text-gray-800 leading-tight">
             We Provide Best <br />
-            Accounting Service
+            Career Service
           </h2>
         </div>
 
@@ -37,7 +37,7 @@ export default function Services() {
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Financial Analysis
+                Free Resume Review
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
@@ -84,7 +84,7 @@ export default function Services() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Software Integration
+                Career Coaching
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
@@ -131,7 +131,7 @@ export default function Services() {
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Compliance Services
+                Interview Coaching
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
