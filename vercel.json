@@ -1,27 +1,17 @@
-
 {
   "version": 2,
-  "name": "logiq-careers", 
-   "installCommand": "npm install",  
-  "buildCommand": "npm run build", 
-  "outputDirectory": "dist/public", 
-
-  "functions": {
-    "dist/api/index.js": { 
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
-
+  "name": "logiq-careers",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
   "routes": [
     {
-      
-      "src": "/api/(.*)", 
-      "dest": "/dist/api/index.js" 
+      "src": "/api/(.*)",
+      "dest": "/dist/api/index.js"
     },
     {
-      
-      "src": "/(.*)", 
-      "dest": "/dist/public/$1" 
+      "src": "/(.*)",
+      "dest": "/dist/public/$1"
     }
   ]
 }
