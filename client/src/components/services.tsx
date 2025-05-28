@@ -17,17 +17,30 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Service 1 */}
           <div className="text-center relative">
-            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative">
+            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Free Resume Review
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Get professional analysis of your current resume with expert feedback and recommendations. Completely free with no obligation required for our comprehensive review service.
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <button className="bg-blue-100 text-blue-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
+              <button 
+                className="text-center text-lg font-normal leading-6 transition-all duration-200 mt-4"
+                style={{
+                  border: '1px solid #ffffff',
+                  backgroundColor: '#f0f5ff',
+                  color: '#1e344b',
+                  letterSpacing: '0.2px',
+                  borderRadius: '100px',
+                  padding: '16px 28px',
+                  fontSize: '18px',
+                  fontWeight: 400,
+                  lineHeight: '1.5em'
+                }}
+              >
                 Learn More
               </button>
             </div>
@@ -35,17 +48,30 @@ export default function Services() {
 
           {/* Service 2 */}
           <div className="text-center relative">
-            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative">
+            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Career Coaching
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Comprehensive 60-90 minute sessions to identify your interests, talents, and career desires with strategic planning guidance and personalized support.
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <button className="bg-blue-100 text-blue-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
+              <button 
+                className="text-center text-lg font-normal leading-6 transition-all duration-200 mt-4"
+                style={{
+                  border: '1px solid #ffffff',
+                  backgroundColor: '#f0f5ff',
+                  color: '#1e344b',
+                  letterSpacing: '0.2px',
+                  borderRadius: '100px',
+                  padding: '16px 28px',
+                  fontSize: '18px',
+                  fontWeight: 400,
+                  lineHeight: '1.5em'
+                }}
+              >
                 Learn More
               </button>
             </div>
@@ -53,17 +79,30 @@ export default function Services() {
 
           {/* Service 3 */}
           <div className="text-center relative">
-            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative">
+            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative h-full flex flex-col">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Interview Coaching
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                Professional interview coaching with mock sessions, question preparation strategies, and confidence building techniques for career success.
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <button className="bg-blue-100 text-blue-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
+              <button 
+                className="text-center text-lg font-normal leading-6 transition-all duration-200 mt-4"
+                style={{
+                  border: '1px solid #ffffff',
+                  backgroundColor: '#f0f5ff',
+                  color: '#1e344b',
+                  letterSpacing: '0.2px',
+                  borderRadius: '100px',
+                  padding: '16px 28px',
+                  fontSize: '18px',
+                  fontWeight: 400,
+                  lineHeight: '1.5em'
+                }}
+              >
                 Learn More
               </button>
             </div>
