@@ -89,7 +89,7 @@ export default function About() {
               }}
             >
               <p className="text-white leading-relaxed">
-                Mission: Recognizing an unmet need in career services, Logiq Careers was established to deliver clearly structured, personalized support. Our comprehensive offerings are designed to help individuals and companies effectively navigate and succeed in an increasingly competitive economic landscape.
+                More than just a document, your resume is a powerful summary of your professional journey. It highlights your qualifications, skills, and key accomplishments, providing future employers with a clear picture of your value and what you can achieve.
               </p>
             </div>
           </div>
