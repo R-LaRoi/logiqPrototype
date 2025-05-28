@@ -16,51 +16,57 @@ export default function Services() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
+          <div className="text-center">
             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <FileText className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">
-              Free Resume Review
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              Get professional analysis of your current resume with expert feedback and recommendations. Completely free with no obligation required for our comprehensive review service.
-            </p>
-            <button className="text-blue-600 font-medium text-sm hover:text-blue-700 transition-colors">
-              Learn More
-            </button>
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                Free Resume Review
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                Get professional analysis of your current resume with expert feedback and recommendations. Completely free with no obligation required for our comprehensive review service.
+              </p>
+              <button className="bg-blue-100 text-blue-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
+                Learn More
+              </button>
+            </div>
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
+          <div className="text-center">
             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">
-              Career Coaching
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              Comprehensive 60-90 minute sessions to identify your interests, talents, and career desires with strategic planning guidance and personalized support.
-            </p>
-            <button className="text-blue-600 font-medium text-sm hover:text-blue-700 transition-colors">
-              Learn More
-            </button>
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                Career Coaching
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                Comprehensive 60-90 minute sessions to identify your interests, talents, and career desires with strategic planning guidance and personalized support.
+              </p>
+              <button className="bg-blue-100 text-blue-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
+                Learn More
+              </button>
+            </div>
           </div>
 
           {/* Service 3 */}
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
+          <div className="text-center">
             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <MessageSquare className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">
-              Interview Coaching
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              Professional interview coaching with mock sessions, question preparation strategies, and confidence building techniques for career success.
-            </p>
-            <button className="text-blue-600 font-medium text-sm hover:text-blue-700 transition-colors">
-              Learn More
-            </button>
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                Interview Coaching
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                Professional interview coaching with mock sessions, question preparation strategies, and confidence building techniques for career success.
+              </p>
+              <button className="bg-blue-100 text-blue-600 px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </div>
