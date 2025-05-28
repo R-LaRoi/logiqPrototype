@@ -16,11 +16,11 @@ export default function Services() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className="text-center">
-            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FileText className="w-8 h-8 text-white" />
-            </div>
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+          <div className="text-center relative">
+            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
+                <FileText className="w-8 h-8 text-white" />
+              </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Free Resume Review
               </h3>
@@ -34,11 +34,11 @@ export default function Services() {
           </div>
 
           {/* Service 2 */}
-          <div className="text-center">
-            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="w-8 h-8 text-white" />
-            </div>
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+          <div className="text-center relative">
+            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
+                <Users className="w-8 h-8 text-white" />
+              </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Career Coaching
               </h3>
@@ -52,11 +52,11 @@ export default function Services() {
           </div>
 
           {/* Service 3 */}
-          <div className="text-center">
-            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <MessageSquare className="w-8 h-8 text-white" />
-            </div>
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+          <div className="text-center relative">
+            <div className="bg-white rounded-xl p-8 pt-16 shadow-sm border border-gray-100 relative">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center absolute -top-8 left-1/2 transform -translate-x-1/2">
+                <MessageSquare className="w-8 h-8 text-white" />
+              </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Interview Coaching
               </h3>
