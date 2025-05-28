@@ -204,33 +204,51 @@ export default function Contact() {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            {/* Contact Details */}
+            {/* Quick Questions */}
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-heading font-semibold mb-6 text-foreground">
-                Get In Touch
+                Have a Quick Question?
               </h3>
+              <div className="space-y-4 mb-6">
+                <p className="text-gray-700">
+                  Ever have a Job Search question that you needed a quick answer?
+                </p>
+                <p className="text-gray-700">
+                  Ever have a Job Interview question that you wanted to ask but didn't know if it was appropriate?
+                </p>
+                <p className="font-semibold text-gray-800">
+                  GIVE US A CALL....678.929.7391 or Email us at ask@logiqcareers.com
+                </p>
+              </div>
+              
               <div className="space-y-4">
-                <div className="flex items-start">
-                  <Mail className="w-6 h-6 text-primary mt-1 mr-4 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-foreground">Email</h4>
-                    <p className="text-muted-foreground">info@logiqcareers.com</p>
-                  </div>
-                </div>
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-primary mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-foreground">Phone</h4>
-                    <p className="text-muted-foreground">(555) 123-LOGIQ</p>
+                    <p className="text-muted-foreground">678.929.7391</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Mail className="w-6 h-6 text-primary mt-1 mr-4 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Email</h4>
+                    <p className="text-muted-foreground">ask@logiqcareers.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Clock className="w-6 h-6 text-primary mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-foreground">Response Time</h4>
-                    <p className="text-muted-foreground">Within 24 hours</p>
+                    <h4 className="font-semibold text-foreground">Experience</h4>
+                    <p className="text-muted-foreground">Our Recruiters / Counselors have an average of 18 years experience assisting and helping job seekers navigate difficult transitions and providing expert advice.</p>
                   </div>
                 </div>
+              </div>
+              
+              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+                <p className="text-gray-700 text-center">
+                  Feel free to give us a call. <strong>678.929.7391</strong> or Email us at <strong>ask@logiqcareers.com</strong>
+                </p>
               </div>
             </div>
 
