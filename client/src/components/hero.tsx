@@ -23,11 +23,11 @@ export default function Hero() {
           {/* Left Content */}
           <div className="z-10 pt-20">
             <h1
-              className="font-normal mb-6 leading-none text-white"
+              className="font-normal mb-6 leading-none text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
               style={{
                 marginTop: "10px",
                 marginBottom: "10px",
-                fontSize: "68px",
+
                 fontWeight: 400,
                 lineHeight: "1em",
               }}

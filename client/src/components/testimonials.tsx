@@ -50,14 +50,14 @@ export default function Testimonials() {
     <section className="py-20" style={{ backgroundColor: "#f8fafc" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          
+
           {/* Left Column - Header */}
           <div>
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               Testimonials
             </p>
-            <h2 
-              className="font-normal mb-6 leading-none text-gray-800"
+            <h2
+              className="font-normal mb-6 leading-none text-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
               style={{
                 marginTop: "10px",
                 marginBottom: "10px",
@@ -69,19 +69,19 @@ export default function Testimonials() {
               What Our Satisfied <br />
               Clients Say
             </h2>
-            
+
             {/* Navigation arrows */}
             <div className="flex gap-4">
-              <button 
+              <button
                 onClick={prevTestimonials}
-                className="w-12 h-12 rounded-full border-2 flex items-center justify-center hover:opacity-80 transition-colors" 
+                className="w-12 h-12 rounded-full border-2 flex items-center justify-center hover:opacity-80 transition-colors"
                 style={{ borderColor: "#050c35", backgroundColor: "#050c35", color: "#ffffff" }}
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
-              <button 
+              <button
                 onClick={nextTestimonials}
-                className="w-12 h-12 rounded-full border-2 flex items-center justify-center hover:opacity-80 transition-colors" 
+                className="w-12 h-12 rounded-full border-2 flex items-center justify-center hover:opacity-80 transition-colors"
                 style={{ borderColor: "#050c35", backgroundColor: "#050c35", color: "#ffffff" }}
               >
                 <ChevronRight className="w-5 h-5" />
@@ -92,8 +92,8 @@ export default function Testimonials() {
           {/* Right Column - Testimonials */}
           <div className="space-y-8">
             {getCurrentTestimonials().map((testimonial, index) => (
-              <div 
-                key={`${currentIndex}-${index}`} 
+              <div
+                key={`${currentIndex}-${index}`}
                 className="p-8 relative"
                 style={{
                   backgroundColor: '#ffffff',
@@ -111,10 +111,10 @@ export default function Testimonials() {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* Role */}
                 <p className="text-gray-500 text-sm mb-3">{testimonial.role}</p>
-                
+
                 {/* Testimonial text */}
                 <p className="text-gray-700 leading-relaxed">
                   {testimonial.testimonial}

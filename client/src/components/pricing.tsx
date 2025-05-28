@@ -61,8 +61,8 @@ export default function Pricing() {
     <section className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 
-            className="font-normal mb-6 leading-none text-white"
+          <h2
+            className="font-normal mb-6 leading-none text-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
             style={{
               marginTop: "10px",
               marginBottom: "10px",
@@ -82,11 +82,10 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative p-8 ${
-                plan.popular
+              className={`relative p-8 ${plan.popular
                   ? "bg-primary text-white transform scale-105"
                   : "bg-white text-gray-900"
-              }`}
+                }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -95,7 +94,7 @@ export default function Pricing() {
                   </span>
                 </div>
               )}
-              
+
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-heading font-bold mb-2">{plan.name}</h3>
                 <div className="text-4xl font-bold mb-2">{plan.price}</div>
@@ -107,9 +106,8 @@ export default function Pricing() {
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
-                    <Check className={`w-5 h-5 mt-0.5 mr-3 flex-shrink-0 ${
-                      plan.popular ? "text-green-300" : "text-green-500"
-                    }`} />
+                    <Check className={`w-5 h-5 mt-0.5 mr-3 flex-shrink-0 ${plan.popular ? "text-green-300" : "text-green-500"
+                      }`} />
                     <span className={plan.popular ? "text-blue-100" : "text-gray-700"}>
                       {feature}
                     </span>
@@ -119,11 +117,10 @@ export default function Pricing() {
 
               <button
                 onClick={scrollToContact}
-                className={`w-full py-3 px-6 rounded-full font-semibold transition-colors duration-200 ${
-                  plan.popular
+                className={`w-full py-3 px-6 rounded-full font-semibold transition-colors duration-200 ${plan.popular
                     ? "bg-white text-primary hover:bg-gray-100"
                     : "bg-primary text-white hover:bg-primary/90"
-                }`}
+                  }`}
               >
                 {plan.buttonText}
               </button>

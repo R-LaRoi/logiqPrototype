@@ -14,18 +14,18 @@ export default function Process() {
     <section className="py-20" style={{ backgroundColor: "#f8fafc" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16">
-          
+
           {/* Right Column - Coaching Summary (appears first on mobile) */}
           <div className="order-1 lg:order-2">
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               Our Expertise
             </p>
-            <h2 
-              className="font-normal mb-6 leading-none text-gray-800"
+            <h2
+              className="font-normal mb-6 leading-none text-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
               style={{
                 marginTop: "10px",
                 marginBottom: "10px",
-                fontSize: "68px",
+
                 fontWeight: 400,
                 lineHeight: "1em",
               }}
@@ -36,7 +36,7 @@ export default function Process() {
             <p className="text-gray-600 mb-8 leading-relaxed text-sm md:text-base">
               From interview preparation and career planning to executive coaching, our experienced professionals provide personalized guidance to help you achieve your career goals. Whether you're seeking a new position, changing careers, or advancing to executive leadership, we offer the expertise and support you need to succeed.
             </p>
-            
+
             <button
               onClick={scrollToContact}
               className="inline-block transition-all duration-200 hover:opacity-90"

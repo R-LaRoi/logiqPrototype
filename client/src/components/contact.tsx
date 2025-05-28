@@ -81,12 +81,12 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 
-            className="font-normal mb-6 leading-none text-foreground"
+          <h2
+            className="font-normal mb-6 leading-none text-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
             style={{
               marginTop: "10px",
               marginBottom: "10px",
-              fontSize: "68px",
+
               fontWeight: 400,
               lineHeight: "1em",
             }}
@@ -218,7 +218,7 @@ export default function Contact() {
                   Ever have a Job Interview question that you wanted to ask but didn't know if it was appropriate?
                 </p>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-primary mt-1 mr-4 flex-shrink-0" />
@@ -242,7 +242,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-6 p-4 bg-gray-50 rounded-lg">
                 <p className="text-gray-700 text-center">
                   Feel free to give us a call. <strong>678.929.7391</strong> or Email us at <strong>ask@logiqcareers.com</strong>
@@ -251,7 +251,7 @@ export default function Contact() {
             </div>
 
             {/* Free Resume Review CTA */}
-            <div 
+            <div
               className="relative shadow-lg p-8 text-white bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: `url(${cityBgImage})`
@@ -259,7 +259,7 @@ export default function Contact() {
             >
               {/* Dark overlay for text contrast */}
               <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-              
+
               {/* Content */}
               <div className="relative z-10">
                 <h3 className="text-2xl font-heading font-semibold mb-4">

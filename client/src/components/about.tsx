@@ -21,12 +21,12 @@ export default function About() {
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               About Us
             </p>
-            <h2 
-              className="font-normal mb-6 leading-none text-gray-800"
+            <h2
+              className="font-normal mb-6 leading-none text-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
               style={{
                 marginTop: "10px",
                 marginBottom: "10px",
-                fontSize: "68px",
+
                 fontWeight: 400,
                 lineHeight: "1em",
               }}
@@ -37,7 +37,7 @@ export default function About() {
             <p className="text-gray-600 mb-8 leading-relaxed">
               Recognizing an unmet need in career services, Logiq Careers was established to deliver clearly structured, personalized support. Our comprehensive offerings are designed to help individuals and companies effectively navigate and succeed in an increasingly competitive economic landscape.
             </p>
-            
+
             {/* Bullet Points in Two Columns */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5 mb-8">
               <div>
@@ -82,7 +82,7 @@ export default function About() {
           <div className="relative h-80 lg:h-96">
             <video
               className="w-full h-full object-cover"
-              style={{ 
+              style={{
                 objectFit: 'cover'
               }}
               autoPlay
@@ -94,9 +94,9 @@ export default function About() {
               <source src={aboutVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            
+
             {/* Blue Overlay Box */}
-            <div 
+            <div
               className="text-white p-6"
               style={{
                 backgroundColor: '#050c35',
