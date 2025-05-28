@@ -9,8 +9,8 @@ export default function Services() {
             Our Services
           </p>
           <h2 className="text-4xl lg:text-5xl font-serif text-gray-800 leading-tight">
-            We Provide Best <br />
-            Career Service
+            Expert Career Guidance <br />
+            & Development
           </h2>
         </div>
 
