@@ -71,21 +71,20 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-muted">
+    <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-heading font-bold text-foreground mb-4">
             Ready to Transform Your Career?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get started with your free resume review or schedule a consultation to
-            discuss your career goals
+            Get started with your free resume review or schedule a consultation to discuss your career goals
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="bg-muted rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-heading font-semibold mb-6 text-foreground">
               Send Us a Message
             </h3>
