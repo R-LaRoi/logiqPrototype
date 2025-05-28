@@ -71,9 +71,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="contact" className="bg-white">
+      {/* Navy Blue Top Border Block */}
+      <div className="h-[10vh] bg-primary"></div>
+      
+      <div className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
           <h2 className="text-4xl font-heading font-bold text-foreground mb-4">
             Ready to Transform Your Career?
           </h2>
@@ -265,6 +269,7 @@ export default function Contact() {
                 Get Your Free Review
               </button>
             </div>
+          </div>
           </div>
         </div>
       </div>
