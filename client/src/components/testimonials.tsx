@@ -1,105 +1,67 @@
-import { Star } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonials() {
-  const services = [
-    {
-      title: "Compliance Services",
-      description: "Professional compliance and regulatory guidance to ensure your career moves align with industry standards and best practices."
-    },
-    {
-      title: "Payroll Processing", 
-      description: "Strategic salary negotiation and compensation analysis to maximize your earning potential in your chosen field."
-    },
-    {
-      title: "Bookkeeping",
-      description: "Comprehensive career record keeping and progress tracking to monitor your professional development journey."
-    },
-    {
-      title: "Auditing",
-      description: "In-depth career audits and assessments to identify strengths, gaps, and opportunities for advancement."
-    }
-  ];
-
   const testimonials = [
     {
-      name: "Michael Chen",
-      role: "Software Engineer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-      testimonial: "The career coaching sessions were incredibly insightful. I was able to identify my true passions and land a senior developer role.",
+      name: "J. Harris",
+      role: "Business Owner",
+      testimonial: "David is one of the best coaches around. He helped me see opportunities in my conflict that helped my business grow! I highly recommend David and his team (Logiq Careers) for coaching or resume writing. Get professionals on your team.",
       rating: 5
     },
     {
-      name: "Sarah Johnson", 
-      role: "Marketing Manager",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-      testimonial: "My new resume got me interviews at three Fortune 500 companies. The interview coaching gave me the confidence to succeed.",
+      name: "Professional Client", 
+      role: "Career Transition",
+      testimonial: "Logiqcareers coached me during several professional transitions. Their guidance was invaluable in helping me navigate career changes and find the right opportunities that aligned with my goals.",
       rating: 5
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20" style={{ backgroundColor: "#f8fafc" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left - Image */}
+          
+          {/* Left Column - Header */}
           <div>
-            <img
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-              alt="Professional team meeting"
-              className="rounded-2xl w-full h-auto shadow-lg"
-            />
-          </div>
-
-          {/* Right - Services List */}
-          <div>
-            <h2 className="text-3xl font-heading font-bold text-foreground mb-8">
-              You Can Trust Us
+            <p className="text-blue-600 text-sm font-medium mb-4 tracking-wide uppercase">
+              Testimonials
+            </p>
+            <h2 className="text-5xl font-serif font-bold text-gray-800 mb-8 leading-tight">
+              What Our Satisfied <br />
+              Clients Say
             </h2>
-            <div className="space-y-6">
-              {services.map((service, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm">{service.description}</p>
-                  </div>
-                </div>
-              ))}
+            
+            {/* Navigation arrows */}
+            <div className="flex gap-4">
+              <button className="w-12 h-12 rounded-full border-2 border-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button className="w-12 h-12 rounded-full border-2 border-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                <ChevronRight className="w-5 h-5" />
+              </button>
             </div>
           </div>
-        </div>
 
-        {/* Testimonials Section */}
-        <div className="mt-20">
-          <h3 className="text-2xl font-heading font-bold text-foreground mb-8 text-center">
-            What Our Satisfied Clients Say
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* Right Column - Testimonials */}
+          <div className="space-y-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="flex mb-3">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4 italic">
-                  "{testimonial.testimonial}"
-                </p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-10 h-10 rounded-full mr-3"
-                  />
-                  <div>
-                    <h4 className="font-semibold text-foreground text-sm">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-muted-foreground text-xs">
-                      {testimonial.role}
-                    </p>
+              <div key={index} style={{ backgroundColor: "#e8f2ff" }} className="p-8 relative">
+                {/* Header with name and stars */}
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-blue-600">
+                    {testimonial.name}
+                  </h3>
+                  <div className="flex">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-red-500 fill-current" />
+                    ))}
                   </div>
                 </div>
+                
+                {/* Testimonial text */}
+                <p className="text-gray-700 leading-relaxed">
+                  {testimonial.testimonial}
+                </p>
               </div>
             ))}
           </div>
