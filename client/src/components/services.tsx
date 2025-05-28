@@ -10,7 +10,7 @@ export default function Services() {
           </p>
           <h2 className="text-4xl lg:text-5xl font-serif text-gray-800 leading-tight">
             We Provide Best <br />
-            Career Service
+            Accounting Service
           </h2>
         </div>
 
@@ -22,27 +22,17 @@ export default function Services() {
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Free Resume Review
+                Financial Analysis
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <button 
-                className="text-xs font-normal transition-all duration-200 mt-4 inline-block hover:opacity-80"
-                style={{
-                  border: '1px solid #e5e7eb',
-                  backgroundColor: '#f0f5ff',
-                  color: '#1e344b',
-                  letterSpacing: '0.1px',
-                  borderRadius: '16px',
-                  padding: '4px 10px',
-                  fontSize: '11px',
-                  fontWeight: 400,
-                  lineHeight: '1.2'
-                }}
+              <a 
+                href="#" 
+                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 mt-4 inline-block text-sm font-normal"
               >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
 
@@ -53,27 +43,17 @@ export default function Services() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Career Coaching
+                Software Integration
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <button 
-                className="text-xs font-normal transition-all duration-200 mt-4 inline-block hover:opacity-80"
-                style={{
-                  border: '1px solid #e5e7eb',
-                  backgroundColor: '#f0f5ff',
-                  color: '#1e344b',
-                  letterSpacing: '0.1px',
-                  borderRadius: '16px',
-                  padding: '4px 10px',
-                  fontSize: '11px',
-                  fontWeight: 400,
-                  lineHeight: '1.2'
-                }}
+              <a 
+                href="#" 
+                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 mt-4 inline-block text-sm font-normal"
               >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
 
@@ -84,27 +64,17 @@ export default function Services() {
                 <MessageSquare className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Interview Coaching
+                Compliance Services
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
-              <button 
-                className="text-xs font-normal transition-all duration-200 mt-4 inline-block hover:opacity-80"
-                style={{
-                  border: '1px solid #e5e7eb',
-                  backgroundColor: '#f0f5ff',
-                  color: '#1e344b',
-                  letterSpacing: '0.1px',
-                  borderRadius: '16px',
-                  padding: '4px 10px',
-                  fontSize: '11px',
-                  fontWeight: 400,
-                  lineHeight: '1.2'
-                }}
+              <a 
+                href="#" 
+                className="text-blue-600 hover:text-blue-800 transition-colors duration-200 mt-4 inline-block text-sm font-normal"
               >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
         </div>
