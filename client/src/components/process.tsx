@@ -20,7 +20,16 @@ export default function Process() {
             <p className="text-sm font-medium mb-4 tracking-wide uppercase" style={{ color: "#050c35" }}>
               Our Expertise
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-gray-800 mb-6 leading-tight">
+            <h2 
+              className="font-normal mb-6 leading-none text-gray-800"
+              style={{
+                marginTop: "10px",
+                marginBottom: "10px",
+                fontSize: "68px",
+                fontWeight: 400,
+                lineHeight: "1em",
+              }}
+            >
               Comprehensive Career <br />
               Coaching Solutions
             </h2>
