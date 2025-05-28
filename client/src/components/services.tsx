@@ -28,15 +28,15 @@ export default function Services() {
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
               <button 
-                className="text-center text-lg font-normal leading-6 transition-all duration-200 mt-4"
+                className="text-center text-sm font-normal leading-6 transition-all duration-200 mt-4 inline-block"
                 style={{
                   border: '1px solid #ffffff',
                   backgroundColor: '#f0f5ff',
                   color: '#1e344b',
                   letterSpacing: '0.2px',
                   borderRadius: '100px',
-                  padding: '16px 28px',
-                  fontSize: '18px',
+                  padding: '8px 16px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   lineHeight: '1.5em'
                 }}
@@ -59,15 +59,15 @@ export default function Services() {
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
               <button 
-                className="text-center text-lg font-normal leading-6 transition-all duration-200 mt-4"
+                className="text-center text-sm font-normal leading-6 transition-all duration-200 mt-4 inline-block"
                 style={{
                   border: '1px solid #ffffff',
                   backgroundColor: '#f0f5ff',
                   color: '#1e344b',
                   letterSpacing: '0.2px',
                   borderRadius: '100px',
-                  padding: '16px 28px',
-                  fontSize: '18px',
+                  padding: '8px 16px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   lineHeight: '1.5em'
                 }}
@@ -90,15 +90,15 @@ export default function Services() {
                 These services are designed to help manage financial processes, ensure compliance with regulations, and provide accurate financial information for decision-making.
               </p>
               <button 
-                className="text-center text-lg font-normal leading-6 transition-all duration-200 mt-4"
+                className="text-center text-sm font-normal leading-6 transition-all duration-200 mt-4 inline-block"
                 style={{
                   border: '1px solid #ffffff',
                   backgroundColor: '#f0f5ff',
                   color: '#1e344b',
                   letterSpacing: '0.2px',
                   borderRadius: '100px',
-                  padding: '16px 28px',
-                  fontSize: '18px',
+                  padding: '8px 16px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   lineHeight: '1.5em'
                 }}
