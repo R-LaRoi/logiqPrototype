@@ -73,7 +73,7 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative rounded-2xl p-8 ${
+              className={`relative p-8 ${
                 plan.popular
                   ? "bg-primary text-white transform scale-105"
                   : "bg-white text-gray-900"
